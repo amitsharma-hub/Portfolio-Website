@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Sharma | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="portfolio_favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Amit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#hr-about">About Me</a></li>
+                    <li><a href="#hr-project">Projects</a></li>
+                    <li><a href="#hr-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <video autoplay loop muted class="video" src="back.vid.mp4"></video>
+        <section class="firstsection">
+
+            <div class="leftsection">
+                Hi, My name is <span class="blue">Amit</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"> <a href="Amit_Sharma_Resume.pdf" download> Download Resume</a></button>
+                    <button class="btn"> <a href="https://github.com/amitsharma-hub" target="_blank">Visit
+                            GitHub</a></button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="pic.webp" alt="">
+            </div>
+        </section>
+
+        <hr id="hr-about">
+
+        <div class="about">
+            <h1>About Me</h1>
+            <div class="diff">
+                <div class="skill">
+                    I’m Amit Sharma, a passionate web developer focused on creating clean, responsive and user-friendly
+                    digital experiences. I love turning ideas into modern, functional websites using HTML, CSS and
+                    JavaScript and I constantly learn new technologies to improve my craft. I enjoy solving real-world
+                    problems with creativity, logic and smart design.
+
+                    <h2>Skills</h2>
+                    <div class="btn">
+                        <button class="btn1">HTML</button>
+                        <button class="btn2">CSS</button>
+                        <button class="btn3">JavaScript</button>
+                        <button class="btn4">React</button>
+                        <button class="btn5">Git</button>
+                        <button class="btn6">Responsive Design</button>
+                    </div>
+                </div>
+
+                <img class="rightphoto" src="photo.png" alt="">
+            </div>
+        </div>
+
+        <hr id="hr-project">
+
+        <h1 class="projects">Projects</h1>
+
+        <section class="secondsection">
+
+            <div class="box">
+
+                <div class="vertical">
+                    <img class="image-first" src="virtual-assistant.png" alt="">
+
+                    <div class="box1">
+
+                        <div class="vertical-text">
+                            <h3>Voice-Controlled Virtual Assistant
+                            </h3>
+                        </div>
+                        <div class="vertical-dis">
+                            Built a JavaScript-based virtual assistant that works using voice commands. It can open
+                            websites, search online and provide basic information using speech recognition.
+                        </div>
+                        <button class="viewproject-1"> <a
+                                href="https://github.com/amitsharma-hub/Virtual-Assistant/tree/main/Virtual%20Assistant"
+                                target="_blank">View Project</a></button>
+
+                    </div>
+
+                </div>
+
+                <div class="vertical">
+                    <img class="image-first" src="netflix.webp" alt="">
+
+                    <div class="box2">
+
+                        <div class="vertical-text">
+                            <h3>Netflix-Style Website
+                            </h3>
+                        </div>
+                        <div class="vertical-dis">
+                            Developed a Netflix-inspired responsive website using HTML and CSS. Focused on layout
+                            design, UI structure and mobile responsiveness.
+                        </div>
+                        <button class="viewproject-2"> <a href="https://github.com/amitsharma-hub/Netflix-Clone"
+                                target="_blank">View Project</a></button>
+
+                    </div>
+
+                </div>
+
+                <div class="vertical">
+                    <img class="image-first" src="travel.png" alt="">
+
+                    <div class="box3">
+
+                        <div class="vertical-text">
+                            <h3>Travel Website-Landing Page
+                            </h3>
+                        </div>
+                        <div class="vertical-dis">
+                            Designed a modern travel website landing page with a clean and attractive UI. Implemented
+                            responsive design for better user experience across devices.
+                        </div>
+                        <button class="viewproject-3"> <a href="https://github.com/amitsharma-hub/Lifesite-Page"
+                                target="_blank">View Project</a></button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <hr id="hr-contact">
+
+        <div class="contact">Contact</div>
+
+        <div class="contacts">
+
+            <form onsubmit="sendEmail(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+
+        <hr>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-www">
+            Copyright &copy amitsportfolio | All rights reserved
+        </div>
+        <div class="img">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mitaharmas620230@gmail.com" target="_blank"><img
+                    class="img1" src="email.png" alt=""></a>
+            <a href="https://github.com/amitsharma-hub" target="_blank"><img class="img2" src="github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/amitsharma386/" target="_blank"><img class="img3" src="linkedin.png"
+                    alt=""></a>
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

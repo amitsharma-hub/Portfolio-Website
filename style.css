@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0a0a0a;
+    padding-top: 60px;
+    color: #EAEAEA;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+}
+
+nav ul li {
+    margin: 0px 30px;
+}
+
+/* Navigation list should be flex and have no bullets */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(230, 227, 227);
+    margin: 0 10px;
+    font-size: 18px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: rgb(46, 157, 119);
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+    font-size: 19px;
+}
+
+nav .left {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, hsl(205, 35%, 37%), #05eecb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 11px;
+    padding: 4px 15px;
+    /* color: aqua; */
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px 0 0px 0;
+}
+
+.firstsection>div {
+    width: 36%;
+}
+
+.leftsection {
+    font-size: 3rem;
+    padding: 50px 0px 0px 80px;
+}
+
+.leftsection .buttons {
+    padding: 50px 0px;
+    display: flex;
+}
+
+.leftsection .btn a {
+    padding: 12px 20px;
+    border: none;
+    margin: 10px 10px 0 0;
+    border-radius: 50px;
+    background: radial-gradient(rgb(25, 25, 25), transparent);
+    border: 1px solid aqua;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.leftsection .btn a:hover {
+    background-color: glow;
+    color: white;
+    font-size: 19px;
+    box-shadow: 0 0 15px #00E0C6;
+}
+
+.rightsection img {
+    width: 90%;
+}
+
+.blue {
+    color: #1991fc;
+    font-weight: bold;
+}
+
+#element {
+    color: #4C84FF;
+    /* font-size: 2.5rem; */
+    font-weight: bold;
+}
+
+main hr {
+    background: none;
+    height: 0px;
+    margin: 200px 60px 89px 60px;
+    border: 0px;
+}
+
+.about h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    background: linear-gradient(90deg, #124d5a00, #20524b, #00fff700);
+    border-radius: 22px;
+}
+
+.about .diff {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0 100px 0;
+}
+
+/* .about .leftp {
+    padding: 0 60px 0 200px;
+} */
+
+.skill {
+    display: flex;
+    color: white;
+    padding: 0 60px 0 200px;
+    flex-direction: column;
+}
+
+.skill h2 {
+    font-size: 25px;
+    padding: 30px 0px 10px 0px;
+}
+
+.btn {
+    display: flex;
+    background: none;
+    border: none;
+}
+
+.btn .btn1,
+.btn2,
+.btn3,
+.btn4,
+.btn5,
+.btn6 {
+    padding: 10px 15px;
+    border: none;
+    margin: 10px 20px 0 0;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid aqua;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    background: radial-gradient(black, transparent);
+}
+
+.btn .btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover,
+.btn6:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px aqua;
+}
+
+.about .rightphoto {
+    width: 400px;
+    border-radius: 20px;
+    margin: 0 200px 0 0;
+    cursor: pointer;
+}
+
+.about .rightphoto:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px aqua;
+}
+
+.projects {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    background: linear-gradient(90deg, #124d5a00, #20524b, #00fff700);
+    border-radius: 22px;
+}
+
+.secondsection {
+    margin: auto;
+    height: 45vh;
+    width: 50%;
+    padding-top: 100px;
+}
+
+.image-first {
+    width: 23px;
+    position: relative;
+    top: -30px;
+    left: -11px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.secondsection .box {
+    background-color: white;
+    width: 70vw;
+    height: 2px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: -155px;
+}
+
+.box .box1 {
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    color: white;
+    border: 2px solid rgb(91, 140, 137);
+    margin: 70px 0px 0px -112px;
+    background: radial-gradient(black, transparent);
+    border-radius: 10px;
+}
+
+.box .box2 {
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    color: white;
+    border: 2px solid rgb(91, 140, 137);
+    margin: 70px 0px 0px -112px;
+    background: radial-gradient(black, transparent);
+    border-radius: 10px;
+}
+
+.box .box3 {
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    color: white;
+    border: 2px solid rgb(91, 140, 137);
+    margin: 70px 0px 0px -112px;
+    background: radial-gradient(black, transparent);
+    border-radius: 10px;
+}
+
+.box .box1:hover,
+.box2:hover,
+.box3:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px aqua;
+}
+
+.secondsection .vertical {
+    height: 80px;
+    width: 2px;
+    background-color: white;
+    margin: 0px 180px;
+}
+
+.vertical-text h3 {
+    width: 192px;
+    position: relative;
+    top: 25px;
+    left: 14px;
+    display: flex;
+    font-weight: bold;
+    color: white;
+}
+
+.vertical-dis {
+    width: 190px;
+    position: relative;
+    top: 40px;
+    left: 15px;
+    display: flex;
+    font-size: 13px;
+    color: #ffffffd9;
+}
+
+.viewproject-1 {
+    margin: 67px 0px 0px 50px;
+    padding: 6px 13px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgb(137, 120, 205), rgb(86, 141, 142));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+
+}
+
+.viewproject-2 {
+    margin: 104px 0px 0px 50px;
+    padding: 6px 13px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgb(137, 120, 205), rgb(86, 141, 142));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.viewproject-3 {
+    margin: 67px 0px 0px 50px;
+    padding: 6px 13px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgb(137, 120, 205), rgb(86, 141, 142));
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.viewproject-1 a,
+.viewproject-2 a,
+.viewproject-3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.viewproject-1:hover,
+.viewproject-2:hover,
+.viewproject-3:hover {
+    color: black;
+    font-size: 17px;
+    background: aqua;
+    box-shadow: 0 0 15px #00E0C6;
+}
+
+.viewproject-1:hover a,
+.viewproject-2:hover a,
+.viewproject-3:hover a {
+    color: rgb(71, 70, 70);
+}
+
+.contact {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 35px;
+    background: linear-gradient(90deg, #124d5a00, #20524b, #00fff700);
+    border-radius: 22px;
+}
+
+.contacts {
+    padding: 60px 20px;
+    text-align: center;
+    margin: 100px 400px 0px 400px;
+    background: radial-gradient(black, transparent);
+}
+
+.contacts form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.contacts input,
+.contacts textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(27, 119, 119);
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgb(0 229 255 / 6%);
+    color: white;
+}
+
+.contacts textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacts button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, rgb(137, 120, 205), rgb(86, 141, 142));
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contacts button:hover {
+    background-color: glow;
+    color: rgb(59, 59, 59);
+    font-size: 17px;
+    background: rgb(20, 210, 210);
+    box-shadow: 0 0 15px #00E0C6;
+}
+
+footer {
+    backdrop-filter: blur(20px);
+}
+
+footer .img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px 20px 0px;
+}
+
+.img .img1,
+.img2,
+.img3 {
+    height: 30px;
+    width: 30px;
+    background: rgb(193, 218, 211);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img .img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.1);
+    background-color: rgb(169, 224, 224);
+    box-shadow: 0 0 15px aqua;
+}
+
+.footer-www {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    color: white;
+}
+
+/* small screens : stack vertically */
+
+@media (max-width: 855px) {
+    nav {
+        padding: 12px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 4px;
+        overflow-x: auto;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .firstsection {
+        flex-direction: column;
+        margin: 100px 20px;
+    }
+
+    .firstsection>div {
+        width: 100%;
+    }
+
+    .leftsection {
+        padding: 20px 12px 0 12px;
+        font-size: 2.2rem;
+    }
+
+    .rightsection img,
+    .about .rightphoto {
+        width: 90%;
+        margin: 20px auto;
+        padding: 0px;
+    }
+
+    .about .diff {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill {
+        padding: 0 16px;
+    }
+
+    .secondsection {
+        height: 75vh;
+    }
+
+    .secondsection .vertical {
+        height: 1px;
+        width: 100px;
+        margin: 135px 0px;
+    }
+
+    .secondsection .box {
+        flex-direction: column;
+        height: 600px;
+        width: 1px;
+        margin: 0;
+    }
+
+    .box .box1,
+    .box .box2,
+    .box .box3 {
+        margin: -104px 0px 0px 130px;
+    }
+
+    .image-first {
+        top: -11px;
+        left: -32px;
+    }
+
+    .contacts {
+        margin: 50px 20px 0 20px;
+    }
+}
